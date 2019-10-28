@@ -10,53 +10,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/YourSE$receiver.coverage" NAME="receiver Coverage Results" MODIFIED="1572084864192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/YourSE$clustering.coverage" NAME="clustering Coverage Results" MODIFIED="1571810405376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YourSE$receiver.coverage" NAME="receiver Coverage Results" MODIFIED="1572246141944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YourSE$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1572243550360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YourSE$clustering.coverage" NAME="clustering Coverage Results" MODIFIED="1572246098251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="YourSE" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="receiver.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="receiver.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/receiver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="448">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crawler.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="42" />
-              <folding>
-                <element signature="e#25#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_agent.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dict/user_agent.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articles.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dict/articles.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -85,11 +55,11 @@
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/jieba/analyse/tfidf.py" />
         <option value="$PROJECT_DIR$/articles.txt" />
         <option value="$PROJECT_DIR$/clustering.py" />
-        <option value="$PROJECT_DIR$/receiver.py" />
         <option value="$PROJECT_DIR$/data/crawler.py" />
         <option value="$PROJECT_DIR$/dict/user_agent.txt" />
         <option value="$PROJECT_DIR$/dict/articles.txt" />
         <option value="$PROJECT_DIR$/crawler.py" />
+        <option value="$PROJECT_DIR$/receiver.py" />
       </list>
     </option>
   </component>
@@ -121,6 +91,11 @@
             <path>
               <item name="YourSE" type="b2602c69:ProjectViewProjectNode" />
               <item name="YourSE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YourSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YourSE" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YourSE" type="b2602c69:ProjectViewProjectNode" />
@@ -164,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crawler">
+  <component name="RunManager" selected="Python.receiver">
     <configuration name="clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="YourSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,9 +204,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.crawler" />
         <item itemvalue="Python.receiver" />
         <item itemvalue="Python.clustering" />
+        <item itemvalue="Python.crawler" />
       </list>
     </recent_temporary>
   </component>
@@ -250,14 +225,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-662" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="right" id="Run" order="5" weight="0.45948827" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info active="true" anchor="right" id="Python Console" order="6" visible="true" weight="0.50852877" />
+      <window_info active="true" anchor="right" id="Python Console" order="6" visible="true" weight="0.47121534" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.1433902" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
@@ -347,13 +321,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bunches.txt" />
     <entry file="file://$PROJECT_DIR$/clustering.py" />
-    <entry file="file://$PROJECT_DIR$/receiver.py">
+    <entry file="file://$PROJECT_DIR$/dict/articles.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="96">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -364,19 +335,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dict/articles.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="42" />
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
           <folding>
             <element signature="e#25#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receiver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

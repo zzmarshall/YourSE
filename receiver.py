@@ -21,21 +21,23 @@ def acquire_article():
     flag, articles = load_data(filename)
     if flag:
         return articles
-    with open("articles.txt", "r", encoding="utf8") as fp1:
+    with open("./dict/articles.txt", "r", encoding="utf8") as fp1:
         for line in fp1:
             url = line.strip()
             web_page = requests.get(url)
             soup = bs(web_page.content)
+            print(soup)
             ts_now = int(datetime.now().timestamp())
             aid = url.split('/')[-1]
             article = [
-                aid,
+                 aid,
+                 ts_now,
                  soup.title.text,
                  soup.body.text,
-                "{}_{}".format(aid, ts_now),
-                 ts_now
             ]
             articles.append(article)
+            print(aid)
+            break
         dump_data(filename, articles)
     return articles
 
@@ -58,7 +60,7 @@ def pre_processor(articles):
         return data["X"], data["vectorizer"]
     data = pd.DataFrame(articles, columns=columns)
 
-    jieba.analyse.set_stop_words("./data/stop_words.txt")
+    jieba.analyse.set_stop_words("./dict/stop_words.txt")
     data["t_kws"] = data["title"].apply(lambda x:
         " ".join(
             jieba.analyse.extract_tags(
@@ -81,6 +83,7 @@ def pre_processor(articles):
 
 if __name__ == "__main__":
     articles = acquire_article()
+    sys.eixt()
     X, vectorizer = pre_processor(articles)
     true_k = 3
     k_means = KMeans(
