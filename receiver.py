@@ -88,7 +88,8 @@ if __name__ == "__main__":
         init='k-means++',
         max_iter=300,
         n_init=1,
-        verbose=False
+        verbose=False,
+        n_jobs=2
     )
     k_means.fit(X)
     terms = vectorizer.get_feature_names()
