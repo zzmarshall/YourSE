@@ -17,9 +17,8 @@ def start(interval=0, initialize=False):
     new_articles = list()
     for r in client.request(seed):
         for i in r["data"]["items"]:
-            if "is_free" not in i:
-                continue
-            new_articles.append("https://36kr.com/p/{}\n".format(i["id"]))
+            new_articles.append("https://36kr.com/p/{}\n".format(i["entity_id"]))
+            print("Article Id: ",i["entity_id"])
     with open("./dict/articles.txt", "a") as fp:
         fp.writelines(new_articles)
 
@@ -36,16 +35,17 @@ class Crawler(object):
 
     def request(self, seed):
 
-        for p in range(1,10):
+        for p in range(0, 1):
             try:
-                url = seed.format(per_page=100, page=p)
+#                url = seed.format(per_page=100, page=p)
+                url = "https://36kr.com/pp/api/aggregation-entity?type=web_latest_article&per_page=8000"
                 header = self._get_header()
                 print("Start: {} {}".format(url, header))
                 response = requests.get(
                     url,
                     header
                 )
-                print(response.content)
+#                print(response.content)
                 if response.status_code/100 != 2:
                     raise Exception(response.reason)
                 rt = json.loads(response.content)
